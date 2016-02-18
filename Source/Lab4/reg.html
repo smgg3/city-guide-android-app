@@ -1,0 +1,80 @@
+<html>
+<head> 
+<div class="main">
+      <div class="one">
+        <div class="register">
+         <link rel="stylesheet" href="css/style1.css">
+
+
+          <h3>&emsp;&emsp;&emsp;Create your account</h3>
+<script>
+function save()
+{
+var inputfname = document.getElementById('fname');
+localStorage.setItem('fname',inputfname.value);
+var inputlname = document.getElementById('lname');
+localStorage.setItem('lname',inputlname.value);
+var inputusername = document.getElementById('username');
+localStorage.setItem('username',inputusername.value);
+var inputemail = document.getElementById('email');
+localStorage.setItem('email',inputemail.value);
+var inputpwd = document.getElementById('pwd');
+localStorage.setItem('pwd',inputpwd.value);
+var inputmnum = document.getElementById('mnum');
+localStorage.setItem('mnum',inputmnum.value);
+localStorage.removeItem('nname');
+localStorage.removeItem('fontsize');
+
+}
+</script>
+</head>
+          <body align="center">
+
+          <form id="reg-form"  method="post" action="index.html" >
+           <table border="1" align="center" >
+           <tr>
+            <div>
+             <td>
+              <label for="firstname">First Name</label></td>
+              <td><input type="text" id="fname"  placeholder="First Name" required /></td>
+                         </div></tr>
+            <tr>
+            <div>
+           <td>
+              <label for="lastname">Last Name</label></td>
+             <td> <input type="text" id="lname" placeholder="Last Name" required /></td>
+            </div>
+           </tr>
+           <tr>
+            <div><td>
+              <label for="username">Username</label></td>
+             <td> <input type="text" id="username" placeholder="UserName" required /></td>
+            </div>
+            </tr>
+            <tr>
+            <div><td>
+              <label for="email">Email</label></td>
+             <td> <input type="text" id="email"  placeholder="Email" required /></td>
+            </div>
+           </tr>
+           <tr>
+            <div><td>
+              <label for="password">Password</label></td>
+             <td> <input type="password" id="pwd" placeholder="Password" required /></td>
+            </div>
+            </tr>
+           <tr>
+            <div><td>
+              <label for="Mobile Number">Mobile Number</label></td>
+             <td> <input type="number" id="mnum" placeholder="Mobile Number" required /></td>
+            </div>
+            </tr>
+                 
+</table>     <div></div><div></div><div></div>
+            <div>
+            <a href="index.html"><input type="button" onclick="save()" value= "SignUp"></a>
+            </div>
+
+          </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style4.css">
+<script>
+function validate()
+{
+var usr=document.getElementById("username1").value;
+var pw=document.getElementById("pwd1").value;
+var usr1=localStorage.getItem("username");
+var pw1=localStorage.getItem("pwd");
+if((usr == usr1) && (pw1 == pw)){
+window.location="a.html";
+}
+ else{
+alert("Login failed");
+}
+}
+
+</script>
+</head>
+<body>
+<div class="login">
+	<h1>Login</h1>
+    <form method="post">
+    	<input type="text" id="username1" placeholder="Username" required="required" />
+        <input type="password" id="pwd1" placeholder="Password" required="required" />
+        <input type="button" onclick="validate()" value="Login"/>
+    </form>
+</div>
+</body>
+</html>
