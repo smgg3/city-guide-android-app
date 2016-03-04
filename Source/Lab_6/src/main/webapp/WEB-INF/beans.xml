@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://cxf.apache.org/jaxrs
+        http://cxf.apache.org/schemas/jaxrs.xsd"
+    default-lazy-init="false">
+	 	
+    <import resource="classpath:META-INF/cxf/cxf.xml" />
+    <!-- <bean id ="weatherUtils" class = "edu.umkc.restservice.utils.WeatherUtils"/>
+    <bean id ="fourSquareUtils" class = "edu.umkc.restservice.utils.FourSquareUtils"></bean> -->
+ 	<bean id="helloService" class="edu.umkc.service.HelloService" />
+ 	<bean id="weatherService" class="edu.umkc.service.WeatherService"/>
+ 	<bean id="restaurantService" class="edu.umkc.service.RestaurantService"/>
+    <jaxrs:server id="hello" address="/hello">
+        <jaxrs:serviceBeans>
+            <ref bean="helloService" />
+        </jaxrs:serviceBeans>
+        <jaxrs:extensionMappings>
+            <entry key="json" value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+    <jaxrs:server id="weather" address="/weather">
+        <jaxrs:serviceBeans>
+            <ref bean="weatherService" />
+        </jaxrs:serviceBeans>
+        <jaxrs:extensionMappings>
+            <entry key="json" value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+    
+    <jaxrs:server id="restaurant" address="/restaurant">
+        <jaxrs:serviceBeans>
+            <ref bean="restaurantService" />
+        </jaxrs:serviceBeans>
+        <jaxrs:extensionMappings>
+            <entry key="json" value="application/json" />
+        </jaxrs:extensionMappings>
+    </jaxrs:server>
+</beans>
