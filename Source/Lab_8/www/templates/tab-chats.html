@@ -1,0 +1,14 @@
+<ion-view view-title="Weather">
+  <ion-content>
+      
+     <div><input type="text" placeholder="city" ng-model="city"/>
+        <input type="button" value="Search" ng-click = "getWeather()"/></div>
+      <div>
+		<p>Temperature: {{temperatureSource}} F</p>
+		<p>Pressure: {{pressureSource}}</p>
+
+	</div>
+      
+      
+  </ion-content>
+</ion-view>
