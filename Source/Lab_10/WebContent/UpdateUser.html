@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="" data-ng-app="myApp1">
+<head>
+<title>Update User Profile</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/updatestyle.css" />
+<script type="text/javascript" src="js/JFCore.js"></script>
+		
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+	<script src="js/update.js"></script>
+</head>
+<body>
+<div class="wrap">
+<!-- tab style-1 -->
+<div class="row">
+	<div class="grid_12 columns">
+	<div class="update">
+						<div ng-controller="UpdateController">
+		<div class="tab style-1">
+		
+    					<dl>
+ 			              <dd class="users"><a class="user active"> </a></dd>
+    					</dl>
+    					
+    					<ul>
+    					
+    						<li class="active">
+			    				<div class="form">		
+										<input type="text" class="active textbox" placeholder="User Name" name="userName" id="userName" data-ng-model="userName" value="User Name"  >
+										<input type="text" class="textbox" placeholder="Password" name="password" id="password" data-ng-model="password" value="Password" >
+										<input type="text" class="textbox" placeholder="Confirm Password" name="confirmPass" id="confirmPass" data-ng-model="confirmPass" value="Confirm Password" >
+										<input type="text" class="textbox" placeholder="Email Address" name="email" id="email" data-ng-model="email" value="Email Address" >
+										
+										<input type="submit" value="Update User" ng_click="update(userName, password,confirmPass, email)">
+										<p>{{msg}}</p>
+							    </div>
+							</li>
+    					</ul>
+    					</div>
+							</div>
+		</div>
+</div>            
+</div>			
+</div>
+<div class="wrap">
+
+</div>
+    </body>
+</html>
