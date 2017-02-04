@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Image for each ListItem row
+    We can refer to images in our drawable folder with
+    @drawable/dot for the image named dot.png -->
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="top" />
+
+    <!-- Used to define a custom ListView row -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_select_dialog_padding_start_material"
+        android:textColor="#000099"
+        android:textStyle="bold|italic"
+        android:padding="5dp"
+        android:autoText="false"
+        android:text="venue name" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/textView_address"
+            android:text="location"
+            android:padding="5dp"
+            android:autoText="false"
+            android:textSize="@dimen/abc_edit_text_inset_top_material"
+            android:textAlignment="viewEnd" />
+    </LinearLayout>
+</LinearLayout>

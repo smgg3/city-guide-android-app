@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">City Guide</string>
+    <string name="action_settings">Home</string>
+    <string name="title_activity_restaurant_srp">Restaurant</string>
+    <string name="title_activity_restaurant_details">Restaurant</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_my_schedule">MySchedule</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="pick_time">pick Time</string>
+    <string name="pick_date">pick Date</string>
+    <string name="Delete">DELETE</string>
+    <string name="title_activity_trends">TrendsActivity</string>
+    <string name="facebook_app_id">209117842801424</string>
+    <string name="title_activity_twitter_trends">TwitterTrends</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

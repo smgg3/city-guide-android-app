@@ -1,0 +1,167 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="false">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:id="@+id/food_image"
+                android:onClick="getFood"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="35dp"
+                android:contentDescription="Food"
+                android:src="@drawable/food" />
+
+
+            <ImageButton
+                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:id="@+id/events_image"
+                android:layout_marginLeft="35dp"
+                android:onClick="getEvents"
+                android:src="@drawable/events"
+                android:contentDescription="Events" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Food"
+                android:id="@+id/textView2"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAlignment="center"
+                android:text="Events"
+                android:id="@+id/textView3"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+            <ImageButton
+                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/places_image"
+                android:onClick="getPlaces"
+                android:src="@drawable/places"
+                android:contentDescription="places" />
+
+            <ImageButton
+                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:id="@+id/transport_image"
+                android:src="@drawable/transport"
+                android:layout_marginLeft="35dp"
+                android:contentDescription="transport"
+                android:onClick="getTransport" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Places"
+                android:id="@+id/textView4"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Travel &amp; Transport"
+                android:id="@+id/textView5"
+                android:layout_column="1" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+        <ImageButton
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/schedule_img"
+            android:onClick="gotoSchedule"
+            android:src="@drawable/schedule"
+            android:contentDescription="Schedule" />
+
+            <ImageButton
+                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:id="@+id/trends_img"
+                android:src="@drawable/trends"
+                android:layout_marginLeft="35dp"
+                android:contentDescription="trends"
+                android:onClick="getTrends" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="My Schedule"
+            android:id="@+id/textView6"
+            android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Trends"
+                android:id="@+id/textView8"
+                android:layout_column="1" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
